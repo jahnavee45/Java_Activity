@@ -1,17 +1,18 @@
-import java.io.*;
-import java.util.*;
+import java.lang.*;
+import java.lang.String;
+
 public class Details
 {
   private int run;
   private String name;
   private String inning;
 
-  public Details(String name, String inning, int run)
+  /*public Details(String name, String inning, int run)
  {
    this.name = name;
    this.inning = inning;
    this.run = run;
- }
+ }*/
 
   public String getName()
   {
