@@ -2,18 +2,18 @@ import java.io.*;
 import java.util.*;
 import java.lang.String;
 
-class Match
+abstract class Match
 {
   int currentscore;
   float currentover;
   int target;
   
   Scanner sc = new Scanner(System.in);
-  /*abstract float calculateRunRate();
+   float calculateRunRate();
   abstract int calculateBalls(int);
-  abstract void display();*/
+  abstract void display();
 }
-/*
+
 class ODIMatch extends Match 
 {
   float calculateRunRate(){
@@ -64,12 +64,12 @@ class T20Match extends Match
    System.out.println("Need "+ +" runs in "+calculateBalls());
 }
 }
-*/
+
 class MatchMain
 {
   public static void main(String args[])
  {
-   Match m = new Match();
+   Match m ;
    Scanner sc = new Scanner(System.in);
    System.out.println("Enter the match format\n"+"1. ODI\n"+"2. T20\n"+"3. Test");
    int i = sc.nextInt();
@@ -79,7 +79,7 @@ class MatchMain
    m.setOver(sc.nextInt());
    System.out.println("Enter the target score");
    m.setTarget(sc.nextInt());
-   /*switch(i){
+   switch(i){
      case 1: m = new ODIMatch();
              m.display();
              break;
@@ -89,6 +89,6 @@ class MatchMain
      case 3: m = new TestMatch();
              m.display();
              break;        
-   }*/
+   }
  }
 }
