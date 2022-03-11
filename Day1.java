@@ -1,5 +1,7 @@
 import java.io.*;
 import java.util.*;
+
+import java.lang.*;
 import java.lang.String;
 
 class Main
